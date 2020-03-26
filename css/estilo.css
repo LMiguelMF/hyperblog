@@ -9,9 +9,9 @@ body{
 }
 #container{
     width: 70%;
-    padding: 1em;
+    padding: 0;
     text-align: center;
-    border: 1px solid whitesmoke;
+    border: 1px solid gray;
     margin: auto;
 }
 
@@ -25,5 +25,15 @@ body{
 }
 
 #footer_pag{
+    background: gray;
+    padding: .5em;
     text-align:right;
+    box-shadow: 0px 0px 11px 0px #727985;
+    color: black;
+    font-weight: bold;
+}
+
+#ruta{
+    font-size: 12px;
+    color: rgb(66, 41, 18);
 }
