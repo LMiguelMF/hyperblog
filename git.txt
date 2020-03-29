@@ -1,0 +1,40 @@
+Sistema de control de versiones
+$ git init // araca el repositorio
+$ git add name.txt // aranca el archivo
+$ git commit -m "version 1" // envia los ultimos cambios del archivo//nueva version
+$ git add . // agregar todos los archivos que cambiaros en la carpeta
+$ git commit -m "cambio a v1"
+$ git status(estado)
+$ git show(mostrar)  // muestra todos los cambios 	
+$ git log(resgistrar a) biografia.txt // nuestra el historial de un archivo
+$ git rm --cached archivo// para quitar del staging 
+$ git config --list >>mostrar
+$ git config --global user.name or email "data";
+
+$ git diff cod1 cod2	//Comparar versiones especificas
+$ git diff  // comparar los cambios staging-directory
+$ git reset cod --hard(duro)  or --soft(suave) // ir a otra versiones
+$ git reset cod HEAD // sacar un archivo de todos los cambfios
+$ git log --stat   //cambios especificos
+$ git checkout cod  archivo// volver como era antes
+$ git checkout master archivo // volver a ultima versión
+// trabajo remoto
+$ git remote add origin URLofGithub// Para vincular el repositorio local con el github
+$ git remote -v //para comprobar la vinculacion
+$ git pull origin nameOfBranch --allow-unrelated-histories // Para traes las branchs y fucionar historias o commits
+$ git push origin nameOfBranch // para submit(enviar) a github 
+$ git pull origin nameOfBranch // para traer los cambion del github
+$ git remote set-url origin URL-ssh // para cambiar la URL del origin	
+$ git fetch // Actuliza la version pero no copia al directory
+
+$ git commit -am //add y commit en uno, solo funciona con archivos ya agregados
+// Manejo de ramas
+$ git branch name // creacion de rama
+$ git checkout  newBranch // cambiar de rama.
+$ git branch // para saber las ramas que existen
+$ git merge nameBranch // "un marge en un commit"estar situado en la rama será la cabezera 
+$ nano archive para editar
+//creacion y agregado al sistema operativo
+$ ssh-keygen -t rsa -b 4096 -C "email"
+$ eval $(ssh-agent -s)
+$ ssh-add ~/.ssh/id_rsa
