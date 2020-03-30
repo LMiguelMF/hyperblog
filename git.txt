@@ -24,8 +24,13 @@ $ git remote -v //para comprobar la vinculacion
 $ git pull origin nameOfBranch --allow-unrelated-histories // Para traes las branchs y fucionar historias o commits
 $ git push origin nameOfBranch // para submit(enviar) a github 
 $ git pull origin nameOfBranch // para traer los cambion del github
-$ git remote set-url origin URL-ssh // para cambiar la URL del origin	
-$ git fetch // Actuliza la version pero no copia al directory
+$ git remote set-url origin URL-ssh // para cambiar la URL del origin
+// tags (versiones)
+$ git tag -a v0.1 m "Esta es la descripcion" codCommit // para la creacion de tag
+$ git show-ref --tags // para ver los tags
+$ git push origin --tags // para enviar tags a github
+$ git tag -d v0.1 // para eliminar tags solo de forma local
+$ git push origin :refs/tags/v0.1 // para eliminar solo de forma remoto
 
 $ git commit -am //add y commit en uno, solo funciona con archivos ya agregados
 // Manejo de ramas
@@ -33,8 +38,12 @@ $ git branch name // creacion de rama
 $ git checkout  newBranch // cambiar de rama.
 $ git branch // para saber las ramas que existen
 $ git merge nameBranch // "un marge en un commit"estar situado en la rama será la cabezera 
+$ git show-branch --all // para ver se forma detalla todas las ramas
+
 $ nano archive para editar
-//creacion y agregado al sistema operativo
+$ alian arbolito="git log --all --graph --decorate --oneline" // para hacer 
+
+//creacion de ssh keys y agregado al sistema operativo
 $ ssh-keygen -t rsa -b 4096 -C "email"
 $ eval $(ssh-agent -s)
 $ ssh-add ~/.ssh/id_rsa
